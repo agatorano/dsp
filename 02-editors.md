@@ -31,8 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> I will use vim. It is extremely fast once you get the hang of it. Honestly, once you are used to it typing in any other way is frustrating! I have used vim for years.
 ---
 
 
@@ -61,6 +60,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> None. I like coding in vim. I don't really enjoy gvim either. The closeness to my terminal makes me spend a lot less time manually clicking from here to there. Interesting features of vim are its many many keyboard shortcuts, customizable shortcuts, portability between machines and customizability of aethetics and experience. Simple vim short cuts are like typing dd can delete a whole line of code. db deletes the last word. $ takes you to the end of the line. The language is designed for movement and fast editing. You can customize it in a .vimrc file that sits in the ~/. directory of your computer.  
 
 ---
