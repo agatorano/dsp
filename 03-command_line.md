@@ -13,16 +13,27 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 > > Interest commands I have found useful
+> > 
 > > diff - performs a line by line comparison of two files
+> > 
 > > comm - allows you to see the commonalities between two files. Like diff but instead has three lines: one contains the entirety of the first file, the sencond contains the entirety of the second, and the third shows the lines in common. You can toggle which lines to remove using th command -1,-2,-3 or any combination to remove the first second or third line respectively.
+> > 
 > > df - shows the disk space available generally df -h is most useful
+> > 
 > > grep - one of the most useful commands on the command line. Finds any files containing text you choose. It can also replace these lines if you would like. 
+> > 
 > > tar - can gzip and bzip files for easy compression. tar -czvf is to zip and tar -cxvf is to unzip. Hard to remember :disappointed:
+> > 
 > > wget - downloads files from web links. I use this all of the time! 
+> > 
 > > sudo !! - if you forget sudo on the last command, sudo !! uses the same command with sudo privleges. 
+> > 
 > > scp - sends files from a local machine to a remote machine
+> > 
 > > mkdir -p - I always forget I can make nested directories with one command
+> > 
 > > alias - allows you to rename some commands. For example if you wante to always require affirmation before deletion you could set rm to equal rm -i.
+> > 
 
 ---
 
