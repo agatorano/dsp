@@ -37,7 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I have both Python 2 and Python3. The site I was developing required Python 3 for advantages with Django. Python2 is the default and is more flexible with collaboration. To check the python version you can use the command python -V or just enter the python terminal and the header will tell you. If you want to choose python 2 or python 3 terminals to enter you can use the command python2 or python3 respectively. 
 
 ---
 
