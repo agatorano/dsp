@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> I will use vim. It is extremely fast once you get the hang of it. Honestly, once you are used to it typing in any other way is frustrating! I have used vim for years.
+> > I will use vim. It is extremely fast once you get the hang of it. Honestly, once you are used to it typing in any other way is frustrating! I have used vim for years.
 ---
 
 
