@@ -49,7 +49,47 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension gives you a way to create lists using a custom function. It is similar to lambda in that it is a way to implement a light weight function that you can create in line. The function in this case just places items into a list. 
+>>
+>> Here is a simple example:
+>>```
+>>a = [x for x in range(20)]
+>>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+>>```
+>> It can also be used to replace map
+>> ```
+>> x = [1,2,3,4,5,6,7,8]
+>> new_list = [i+2 for i in x]
+>> [3, 4, 5, 6, 7, 8, 9, 10]
+>> x = [1,2,3,4,5,6,7,8]
+>> y = lambda x: x+2
+>> x = map(y,x)
+>> [3, 4, 5, 6, 7, 8, 9, 10]
+>> ```
+>> It can also be used to replace Filter
+>> ``` 
+>> x = [1,2,3,4,5,6,7,8]
+>> x = [i for i in x if i%2]
+>> [1, 3, 5, 7]
+>> x = [1,2,3,4,5,6,7,8]
+>> x = filter(lambda x:x%2, x)
+>>```
+>>
+>> These are identical functions. List comprehensions can be clearer at times but filter/map can be a shorter function. 
+>>
+>> Set and Dictionary comprehensions are just as easy to do
+>>
+>> x = [1,1,1,2,2,2,2,3,3,3,3,3,4,4,5,5,7]
+>> x = {i for i in x}
+>> set([1, 2, 3, 4, 5, 7])
+>>
+>> y = ('name','age','year')
+>> x = ['John','24','2015']
+>> z = {i:j for i,j in zip(y,x)}
+>> {'age': '24', 'name': 'John', 'year': '2015'}
+>>
+>>
+>> This shows how easily you can use comprehension to create complicated custom data structures using one line.
 
 ---
 
