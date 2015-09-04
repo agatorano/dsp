@@ -18,8 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
-
+    if count<10:
+      print ("Number of donuts: %s"%count)
+    else:
+      print("Number of donuts: many")
 
 def both_ends(s):
     """
@@ -37,7 +39,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+
+    if len(s)>2:
+      x = ''.join((s[0],s[1],s[-2],s[-1]))
+      return(x)
+    else:
+      return('')
 
 
 def fix_start(s):
@@ -56,8 +63,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    word = s[0]
+    word += ''.join(['*' if c==s[0] else c for c in s[1:]])
 
+    return word
 
 def mix_up(a, b):
     """
@@ -74,8 +83,15 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
-
+    l = len(a)
+    
+    team = ' '.join((a,b))
+    splt = list(team)
+    tmp = splt[0]
+    splt[0]=splt[l+1]
+    splt[l+1]=tmp
+    word = ''.join(splt)
+    return word
 
 def verbing(s):
     """
@@ -91,7 +107,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) > 2 and 'ing' not in s:
+      s+='ing'
+      return s
+    elif 'ing' in s:
+      s+='ly'
+      return s
+    else:
+      return s
 
 
 def not_bad(s):
@@ -111,7 +134,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    if s.find('not')> s.find('bad'):
+      return s
+    else:
+      i = s.find('not')
+      j = s.find('bad')+3
+      sub = s[i:j]
+      s = s.replace(sub,'good')
+      return s
 
 
 def front_back(a, b):
@@ -130,4 +160,28 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    l_a = len(a)
+    l_b = len(b)
+
+    if l_a%2!=0:
+      l_a = l_a/2
+      front_a = a[:l_a+1]
+      back_a = a[l_a+1:]
+    else:
+      l_a = l_a/2
+      front_a = a[:l_a]
+      back_a = a[l_a:]
+
+    if l_b%2!=0:
+      l_b = l_b/2
+      front_b = b[:l_b+1]
+      back_b = b[l_b+1:]
+    else:
+      l_b = l_b/2
+      front_b = b[:l_b]
+      back_b = b[l_b:]
+
+  
+    word = ''.join((front_a,front_b,back_a,back_b))
+    return word
+
