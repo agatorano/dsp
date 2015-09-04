@@ -34,7 +34,14 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >>f(2)
 >>4
 >>``` 
->>This would compute the square of a number. 
+>>This computes the square of a number. 
+>>Another example using sort would be:
+>>```
+>> x = [1, 9, 7, 86, 5, 4, 6, 7, 3, 2, 1, 3, 4]
+>> sorted(x, key=lambda x: x%2==0)
+>> [1, 9, 7, 5, 7, 3, 1, 3, 86, 4, 6, 2, 4]
+>>```
+>> this seperates the even and odd numbers. It sorts based on wheter a number is divisible by 2. 
 
 ---
 
