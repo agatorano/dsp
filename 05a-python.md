@@ -78,7 +78,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> These are identical functions. List comprehensions can be clearer at times but filter/map can be a shorter function. 
 >>
 >> Set and Dictionary comprehensions are just as easy to do
->>
+>>```
 >> x = [1,1,1,2,2,2,2,3,3,3,3,3,4,4,5,5,7]
 >> x = {i for i in x}
 >> set([1, 2, 3, 4, 5, 7])
@@ -87,7 +87,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> x = ['John','24','2015']
 >> z = {i:j for i,j in zip(y,x)}
 >> {'age': '24', 'name': 'John', 'year': '2015'}
->>
+>>```
 >>
 >> This shows how easily you can use comprehension to create complicated custom data structures using one line.
 
