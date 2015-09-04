@@ -28,7 +28,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> A lamda is a function that is set to a variable. This can be used for creating short simple reusable functions, or to create functions that will be used as arguments in a group of python functions. A simple example would be ```f = lambda x: x*x```  ```f(2) prints 4``` This would compute the square of a number. 
+>> A lamda is a function that is set to a variable. This can be used for creating short simple reusable functions, or to create functions that will be used as arguments in a group of python functions. A simple example would be 
+>>```
+>>f = lambda x: x*x
+>>f(2)
+>>4
+>>``` 
+>>This would compute the square of a number. 
 
 ---
 
