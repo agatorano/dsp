@@ -1,13 +1,30 @@
-# Hint:  use Google to find python function
+from  datetime import datetime
+from datetime import date
 
-####a) 
-date_start = '01-02-2013'  
-date_stop = '07-28-2015'   
+def find_distance():
+  ####a) 
+  form = '%m-%d-%Y'
+  date_start = datetime.strptime('01-02-2013',form)
+  date_stop = datetime.strptime('07-28-2015',form)   
+  delt =date_stop-date_start
+  print(delt)
 
-####b)  
-date_start = '12312013'  
-date_stop = '05282015'  
+  ####b)  
+  form = '%m%d%Y'
+  date_start = datetime.strptime('12312013',form) 
+  date_stop = datetime.strptime('05282015',form) 
+  delta = date_stop-date_start
+  print(delta)
 
-####c)  
-date_start = '15-Jan-1994'  
-date_stop = '14-Jul-2015'  
+  ####c)  
+  form = '%d-%b-%Y'
+  date_start = datetime.strptime('15-Jan-1994',form)
+  date_stop = datetime.strptime('14-Jul-2015',form) 
+  delt = date_stop-date_start
+  print(delt)
+
+def main():
+  find_distance()
+
+if __name__ == '__main__':
+  main()
