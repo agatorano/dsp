@@ -16,7 +16,19 @@ Use regular expressions to:
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> ```
+>> import pandas as pd
+>> from collections import defaultdict
+>> data = pd.read_csv('faculty.csv')
+>> degree = data[[1]]
+>> degrees = defaultdict(int)
+>> for i in range(len(data)):
+>>  deg = degree.ix[i][0]
+>>  if len([True for i in list_ if re.match(deg,i)])==0:
+>>    degrees[deg] =0
+>>  else:
+>>    degrees[deg]= degrees[deg]+1
+>> ```
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
