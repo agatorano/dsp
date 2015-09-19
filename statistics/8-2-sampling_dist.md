@@ -1,7 +1,7 @@
 [Think Stats Chapter 8 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77) (scoring)
 
 >> The plot of the cdf of the estimations is here
->> !(exponential_est_plot.png "Graph1")
+>> ![exp estimation](exponential_est_plot.png)
 >> and here we get the 
 >> Standard Error
 >> ```
@@ -16,5 +16,5 @@
 >> cdf.Percentile(95)
 >> [1.31,3.68]
 >> and to see the relationship of the sample size to the standard error we can graph sample sizes [10, 12, 15, 20, 50, 100, 500]
->> !(diff_lam.png "check samples")
+>> ![changing lambda](diff_lam.png)
 
