@@ -15,6 +15,7 @@
 >> cdf.Percentile(5)
 >> cdf.Percentile(95)
 >> [1.31,3.68]
+>>```
 >> and to see the relationship of the sample size to the standard error we can graph sample sizes [10, 12, 15, 20, 50, 100, 500]
 >> ![changing lambda](diff_lam.png)
 

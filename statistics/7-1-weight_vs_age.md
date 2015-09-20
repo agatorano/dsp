@@ -1,5 +1,9 @@
 [Think Stats Chapter 7 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2008.html#toc70) (weight vs. age)
 
+>> Scatter plot of birth weiht vs. Mother's Age
+>> ![weight vs. age](age_weight_scatter.png)
+>> and the percentile graph was found by binning the values and cdf
+>> ![percentile](percentile.png)
 >> Get Pearson Correlation
 >> ```
 >> live = data
